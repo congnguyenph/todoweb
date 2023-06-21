@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Collection</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tabcontent.css">
+</head>
+<body>
+    <div class="tab">
+        <a href="../../index.php" class="logolink">
+            <img class="logo" src="../../../images/logo.png" alt="logo" >
+          </a>
+        <button class="tablinks active ">Information</button>
+        <button class="tablinks">Gallery</button>
+    </div>
+    <div id="Information" class="tabcontent">
+        <br><br>
+        <h3><center><font size="6" style="color:white">About Me</font></center></h3>
+        <div id="content">
+            <div class="block-center">
+                <picture>
+                    <source media="(width:400px)" srcset="../pic/pic.jpg">
+                    <center><img src="../pic/pic.jpg" id="pic"></center>
+                </picture>
+                <p>Họ Và Tên: Huỳnh Thị Yến Khoa</p> 
+                <p>Giới Tính: Nữ</p>
+                <p>Ngày Sinh: 14-08-2002</p>
+                <p>Trường:Đại học Sư Phạm Thành Phố Hồ Chí Minh</p>
+                <p>Khoa: Công Nghệ Thông Tin</p>
+                <p>Chuyên Ngành: Công Nghệ Phần mềm</p>
+                <p>Gmail: yenkhoamc@gmail.com</p>
+            </div>
+        </div>
+        <div id="content">
+            <div class="block-center">
+                <center><font size="6" style="color:white">Skill</font></center>
+                <form>
+                    <label for="language">Ngôn Ngữ</label>
+                    <select name="language" id="select-language">
+                        <option value="gia tri">Chọn ngôn ngữ</option>
+                        <option value="Cplusplus">C++</option>
+                        <option value="CSharp">C#</option>
+                        <option value="php">PHP</option>
+                        <option value="HTML,SCC">HTML,CSS</option>
+                    </select>
+                    <br />
+                    <p><label>Kĩ Năng Mềm</label></p>
+                    <textarea id="ki nang" name="ki nang mem" rows="4" cols="50">Làm việc nhóm, kiểm tra và khắc phục sự cố, quản lí dự án</textarea>
+                    <br /><button>Lưu</button>
+                </form>
+            </div>
+        </div>
+        <div id="content">
+            <div class="block-center">
+                <center><font size="6" style="color: white">Contact</font></center>
+            </div>
+            <center>
+                <div class="container">
+                    <div class="button">
+                        <a href="https://www.facebook.com/konehay/" target="_blank" >
+                            <div class="icon">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+
+                    <div class="button">
+                        <a href="https://chat.zalo.me/" target="_blank">
+                            <div class="icon">
+                                <!--<i class="fa fa-instagram" aria-hidden="true"></i>-->
+                                <img src="../pic/zalo-icon.png" height="60" width="60" />
+                            </div>
+                            <span>Zalo</span>
+                        </a>
+                    </div>
+
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                        <span>Twitter</span>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </div>
+                        <span>Youtube</span>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+    <div id="Gallery" class="tabcontent">
+        <br /><br />
+        <h3><center><font size="6" style="color:white">Gallery</font></center></h3>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numberText">1 / 6</div>
+                <img src="https://images.unsplash.com/photo-1551567974-df92b88aba00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80" style="width:100%" alt="New England Sunset">
+                <div class="text">New England Sunset</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numberText">2 / 6</div>
+                <img src="https://images.unsplash.com/photo-1551623100-91064afb69bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="width:100%" alt="lush green valleys">
+                <div class="text">Lush Green Valleys</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numberText">3 / 6</div>
+                <img src="https://images.unsplash.com/photo-1535507568891-fd46651fe8c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="width:100%" alt="coral reef">
+                <div class="text">Coral Reef</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numberText">4 / 6</div>
+                <center><img src="../pic/1.jpg" style="width:70%" /></center>
+            </div>
+            <div class="mySlides fade" >
+                <div class="numbertext">5 / 6</div>
+                <center><img src="../pic/2.jpg" style="width:70%" /></center>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <center><img src="../pic/28-7.jpg" style="width:inherit" /></center>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</body>
+<script src="../js/tabcontent.js"></script>
+
+</html>

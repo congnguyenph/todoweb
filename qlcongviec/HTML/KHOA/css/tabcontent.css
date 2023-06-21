@@ -1,0 +1,250 @@
+body{
+    background-image: url("../pic/background.jpg");
+    /*background-color: purple;*/
+}
+
+div.container {
+    width: 60%;
+    margin: auto;    
+}
+/* định dạng thẻ div chưa các button tab */
+div.tab {
+    overflow: hidden;
+    light-color: hlsa(120,95%,98%);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    
+}
+
+    /* định dạng các button tab */
+    div.tab button {
+        background-color:inherit;
+        float: right;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 20px 26px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+
+    }
+
+        /* đổi màu khi một button tab được hover */
+        div.tab button:hover {
+            background-color: #DEFCF9;
+        }
+
+        /* đổi màu nền cho tab đang được hiển thị nội dung */
+        div.tab button.active {
+            background: rgba(0,0,0,0.5);
+            color: white;
+        }
+
+/* định dạng nội dung hiển thị */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    
+}
+
+.block-center {
+    margin: 10px auto;
+    width: 700px;
+    background: rgba(0,0,0,0.5);
+    light-color: hlsa(120,95%,98%);
+    color: white;
+    padding: 10px;
+}
+
+#pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0.475em 0.475em 0 0 rgba(15, 28, 63, 0.125);
+}
+.container .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: none;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.5s ease-out;
+}
+
+    .container .button .icon {
+        display: inline-block;
+        text-align: center;
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.5s ease-out;
+        margin-right:10px;
+    }
+
+    .container .button .icon i {
+            font-size: 25px;
+            line-height: 60px;
+            transition: all 0.5s ease-out;
+    }
+
+    .container .button span {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+        transition: all 0.5s ease-out;
+    }
+    .container .button:hover {
+        width: 200px;
+    }
+
+    .container .button {
+    overflow: hidden;
+     }
+    .container .button:nth-child(1):hover .icon {
+        background: #4267B2;
+    }
+
+    .container .button:nth-child(2):hover .icon {
+        background: #19a7ce;
+    }
+
+    .container .button:nth-child(3):hover .icon {
+        background: #55acee;
+    }
+
+    .container .button:nth-child(4):hover .icon {
+        background: #cd201f;
+    }
+
+    .container .button:hover .icon i {
+        color: #fff;
+    }
+
+    .container .button:nth-child(1) span {
+        color: #4267B2;
+    }
+
+        .container .button:nth-child(2) span {
+            color: #19a7ce;
+        }
+
+    .container .button:nth-child(3) span {
+        color: #55acee;
+    }
+
+    .container .button:nth-child(4) span {
+        color: #cd201f;
+    }
+
+/* tab 2*/
+* {
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* .mySlides {
+display: none;
+} */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 0 3px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.numberText {
+    color:white;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

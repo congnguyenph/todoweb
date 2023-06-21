@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    background-color: #242528;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #242528;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #0088a9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 10%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #242528e1;
+    z-index: 2;
+    backdrop-filter: blur(20px);
+}
+
+.spacer {
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(../SVG/blackblue.svg);
+}
+
+.layer2 {
+    background-image: url(../SVG/bluewhite.svg);
+}
+
+.layer3 {
+    background-image: url(../SVG/blueblack.svg);
+}
+
+p {
+    font-size: 18px;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.box-img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border: 4px solid #0088a9;
+}
+
+.nameinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logolink {
+    margin-right: auto;
+}
+
+.logo {
+    width: 60px;
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.get-started {
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-about {
+    color: #242528;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    min-width: 50em;
+    padding: 2rem 5rem;
+    border-radius: 5rem;
+    margin: 1rem 0;
+}
+
+#section-about ul li form {
+    color: #edf0f1;
+}
+
+#section-about label{
+    color: #edf0f1;
+}
+
+.about * {
+    color: #242528;
+    font-weight: 500;
+}
+
+.about h1 {
+    text-align: center;
+    font-weight: 1000;
+    padding-bottom: 1rem;
+}
+
+.about h2 {
+    padding-bottom: 0.7rem;
+}
+
+label, option, form, input, select{
+    color: #242528;
+}
+
+.white {
+    background: #edf0f1;
+    color: #242528;
+}
+
+.black {
+    background: #242528;
+}
+
+.blue {
+    background: #0088a9;
+}
+
+.tabs-link {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    padding: 0 1rem;
+    justify-content: center;
+    min-width: 20rem;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    padding: 0.2rem 0;
+}
+
+.tab h3 {
+    font-weight: 500;
+}
+
+.tab-img {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.5rem;
+}
+
+.tab:hover > .tab-img {
+    border: 2px solid #0088a9;
+}
+
+.tab:hover > h3 {
+    font-weight: 1000;
+}
+
+.active {
+    padding-left: 1rem;
+    background-color: #3c3d42;
+    border-radius: 1.75rem;
+}
+
+.active > .tab-img {
+    border: 2px solid #0088a9;
+}
+
+.active > h3 {
+    font-weight: 1000;
+}
+
+@media (max-width: 60em) {
+    .tab > h3 {
+        display: none;
+    }
+
+    .active {
+        background-color: transparent;
+    }
+}
+
+.swiper {
+    width: 240px;
+    height: 320px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background:url(../images/RandomImages/pexels-yurii-hlei-1365795.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background:url(../images/RandomImages/image1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background:url(../images/RandomImages/image2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background:url(../images/RandomImages/pexels-ash-376464.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background:url(../images/RandomImages/ChatGPT-Header-1024x486.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }

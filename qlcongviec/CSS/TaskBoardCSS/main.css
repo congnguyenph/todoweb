@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.kanban {
+	display: flex;
+	gap: 1rem;
+}
+
+.kanban * {
+	font-family: "Montserrat", sans-serif;
+}
+
+.kanban__column {
+	background-color: #24252898;
+	backdrop-filter: blur(20px);
+	padding: 30px;
+	border-radius: 1rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.kanban__column>*:first-child{
+	align-self: center;
+}
+
+.kanban__column-title {
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: #edf0f1;
+	user-select: none;
+}
+
+.kanban__item-input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background: #edf0f1;
+	color: var(--bg-primary);
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+
+.kanban__dropzone {
+	height: 10px;
+	transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active {
+	height: 2rem;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #edf0f1;
+	background: #0088a9;
+	border: none;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+
+.kanban__add-item:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}

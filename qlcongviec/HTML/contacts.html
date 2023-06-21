@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/contacts.css" />
+    <link rel="stylesheet" href="../CSS/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="hero sticky">
+      <a href="./index.php" class="logolink">
+        <img class="logo" src="../images/logo.png" alt="logo" />
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="./index.php">Home</a></li>
+        </ul>
+      </nav>
+      <a class="get-started" href="./work.php">
+        <button>Get Started</button>
+      </a>
+    </div>
+
+    <div class="tabs">
+      <div class="tabs-link">
+        <div
+          onclick="openContact(event,'huatienhao')"
+          class="tab tablink active"
+        >
+          <img src="../images/Ina.jpg" alt="Hứa Tiên Hào" class="tab-img" />
+          <h3>Hứa Tiên Hào</h3>
+        </div>
+        <div onclick="openContact(event,'huynhthiyenkhoa')" class="tab tablink">
+          <img
+            src="../images/NguyenThiYenKhoa/pic.jpg"
+            alt="Huỳnh Thị Yến Khoa"
+            class="tab-img"
+          />
+          <h3>Huỳnh Thị Yến Khoa</h3>
+        </div>
+        <div onclick="openContact(event,'phuoccongnguyen')" class="tab tablink">
+          <img
+            src="./PCN/picture/nguyen.png"
+            alt="Phước Công Nguyên"
+            class="tab-img"
+          />
+          <h3>Phước Công Nguyên</h3>
+        </div>
+        <div onclick="openContact(event,'chautieumy')" class="tab tablink">
+          <img src="../SVG/user-solid.svg" alt="Châu Tiểu My" class="tab-img" />
+          <h3>Châu Tiểu My</h3>
+        </div>
+        <div onclick="openContact(event,'hoangvanthinh')" class="tab tablink">
+          <img
+            src="../SVG/user-solid.svg"
+            alt="Hoàng Văn Thịnh"
+            class="tab-img"
+          />
+          <h3>Hoàng Văn Thịnh</h3>
+        </div>
+      </div>
+
+      <div id="huatienhao" class="contact">
+        <section class="black" id="section-home">
+          <div class="tilt">
+            <div>
+              <img src="../images/Ina.jpg" alt="Hứa Tiên Hào" class="box-img" />
+            </div>
+            <div class="nameinfo">
+              <h1>Hứa Tiên Hào</h1>
+              <h4>46.01.104.049 - IT</h4>
+            </div>
+          </div>
+        </section>
+
+        <div class="spacer layer1"></div>
+
+        <section class="blue" id="section-about">
+          <h1>About Me</h1>
+
+          <div class="about white">
+            <h1>Infomation</h1>
+            <h2>Name: Hứa Tiên Hào</h2>
+            <h2>Student ID: 46.01.104.049</h2>
+            <h2>Major: Infomation Technology</h2>
+            <h2>School: Univerity of Education</h2>
+          </div>
+
+          <div class="about white">
+            <h1>Contact</h1>
+            <h2>Email: 4601104049@student.hcmue.edu.vn</h2>
+            <h2>Phone: 0934152851</h2>
+            <h2>Address: 36/41 Mễ Cốc</h2>
+          </div>
+
+          <!-- <h1>Favorites:</h1>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div> -->
+        </section>
+
+        <div class="spacer layer3"></div>
+      </div>
+
+      <div id="huynhthiyenkhoa" class="contact" style="display: none">
+        <section class="black" id="section-home">
+          <div class="tilt">
+            <div>
+              <img
+                src="../images/NguyenThiYenKhoa/pic.jpg"
+                alt="Huỳnh Thị Yến Khoa"
+                class="box-img"
+              />
+            </div>
+            <div class="nameinfo">
+              <h1>Huỳnh Thị Yến Khoa</h1>
+              <h4>46.01.104.087 - IT</h4>
+            </div>
+          </div>
+        </section>
+
+        <div class="spacer layer1"></div>
+
+        <section class="blue" id="section-about">
+          <h1>About Me</h1>
+
+          <div class="about white">
+            <h1>Infomation</h1>
+            <h2>Name: Huỳnh Thị Yến Khoa</h2>
+            <h2>Student ID: 46.01.104.087</h2>
+            <h2>Major: Infomation Technology</h2>
+            <h2>School: Univerity of Education</h2>
+          </div>
+
+          <div class="about white">
+            <h1>Contact</h1>
+            <h2>Email: 4601104087@student.hcmue.edu.vn</h2>
+            <h2>Phone:</h2>
+            <h2>Address:</h2>
+          </div>
+        </section>
+
+        <div class="spacer layer3"></div>
+      </div>
+
+      <div id="phuoccongnguyen" class="contact" style="display: none">
+        <section class="black" id="section-home">
+          <div class="tilt">
+            <div>
+              <img
+                src="./PCN/picture/nguyen.png"
+                alt="Phước Công Nguyên"
+                class="box-img"
+              />
+            </div>
+            <div class="nameinfo">
+              <h1>Phước Công Nguyên</h1>
+              <h4>46.01.104.125 - IT</h4>
+            </div>
+          </div>
+        </section>
+
+        <div class="spacer layer1"></div>
+
+        <section class="blue" id="section-about">
+          <h1>About Me</h1>
+
+          <div class="about white">
+            <h1>Infomation</h1>
+            <h2>Name: Phước Công Nguyên</h2>
+            <h2>Student ID: 46.01.104.125</h2>
+            <h2>Major: Infomation Technology</h2>
+            <h2>School: Univerity of Education</h2>
+          </div>
+
+          <div class="about white">
+            <h1>Contact</h1>
+            <h2>Email: 4601104125@student.hcmue.edu.vn</h2>
+            <h2>Phone:</h2>
+            <h2>Address:</h2>
+          </div>
+        </section>
+
+        <div class="spacer layer3"></div>
+      </div>
+
+      <div id="chautieumy" class="contact" style="display: none">
+        <section class="black" id="section-home">
+          <div class="tilt">
+            <div>
+              <img
+                src="../SVG/user-solid.svg"
+                alt="Châu Tiểu My"
+                class="box-img"
+              />
+            </div>
+            <div class="nameinfo">
+              <h1>Châu Tiểu My</h1>
+              <h4>47.01.104.131 - IT</h4>
+            </div>
+          </div>
+        </section>
+
+        <div class="spacer layer1"></div>
+
+        <section class="blue" id="section-about">
+          <h1>About Me</h1>
+
+          <div class="about white">
+            <h1>Infomation</h1>
+            <h2>Name: Châu Tiểu My</h2>
+            <h2>Student ID: 47.01.104.131</h2>
+            <h2>Major: Infomation Technology</h2>
+            <h2>School: Univerity of Education</h2>
+          </div>
+
+          <div class="about white">
+            <h1>Contact</h1>
+            <h2>Email: 4701104131@student.hcmue.edu.vn</h2>
+            <h2>Phone:</h2>
+            <h2>Address:</h2>
+          </div>
+        </section>
+
+        <div class="spacer layer3"></div>
+      </div>
+
+      <div id="hoangvanthinh" class="contact" style="display: none">
+        <section class="black" id="section-home">
+          <div class="tilt">
+            <div>
+              <img
+                src="../SVG/user-solid.svg"
+                alt="Hoàng Văn Thịnh"
+                class="box-img"
+              />
+            </div>
+            <div class="nameinfo">
+              <h1>Hoàng Văn Thịnh</h1>
+              <h4>47.01.104.201 - IT</h4>
+            </div>
+          </div>
+        </section>
+
+        <div class="spacer layer1"></div>
+
+        <section class="blue" id="section-about">
+          <h1>About Me</h1>
+
+          <div class="about white">
+            <h1>Infomation</h1>
+            <h2>Name: Hoàng Văn Thịnh</h2>
+            <h2>Student ID: 47.01.104.201</h2>
+            <h2>Major: Infomation Technology</h2>
+            <h2>School: Univerity of Education</h2>
+          </div>
+
+          <div class="about white">
+            <h1>Contact</h1>
+            <h2>Email: 4701104201@student.hcmue.edu.vn</h2>
+            <h2>Phone:</h2>
+            <h2>Address:</h2>
+          </div>
+        </section>
+
+        <div class="spacer layer3"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../JS/vanilla-tilt.js"></script>
+    <script src="../JS/swiper-bundle.min.js"></script>
+    <script src="../JS/contact.js"></script>
+  </body>
+</html>
